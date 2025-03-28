@@ -1,0 +1,7 @@
+h5py==3.10.0
+matplotlib==3.8.3
+numpy==1.26.3
+pandas==2.2.1
+PyYAML==6.0.1
+torchinfo==1.8.0
+tqdm==4.66.2

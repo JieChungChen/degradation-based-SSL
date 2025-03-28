@@ -1,0 +1,9 @@
+figures/
+paper_writing/
+Stanford_Dataset/
+
+evaluation.py
+embedding_architecture.py
+downstream_task.py
+main.py
+model_architecture.py
