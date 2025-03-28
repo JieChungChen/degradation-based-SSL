@@ -30,6 +30,6 @@ Download the pre-trained model [here]()
 
 ...
 
-### Results
+### Result
 
 ![result1](figures/result1.png)
