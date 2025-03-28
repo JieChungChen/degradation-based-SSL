@@ -84,13 +84,15 @@ def load_Stanford_data(data_dir, mode='train', detrend=True, seed=None, full=Fal
                           if full: (n_cycle, n_segment: 20, n_feature: 2, time_step: 3600).
                           else: (n_cycle, n_feature: 2, time_step: 3600).
     """
-    if mode != 'train' and mode != 'valid':
+    if mode not in ['train', 'valid', 'all']:
         raise ValueError('mode must be train or valid')
     
     if mode=='train':
         cell_ids = TRN_CELL_IDS
     elif mode=='valid':
         cell_ids = TEST_CELL_IDS
+    elif mode=='all':
+        cell_ids = TRN_CELL_IDS+TEST_CELL_IDS
 
     if seed is not None:
         random.seed(seed)
@@ -159,7 +161,3 @@ def load_Stanford_capacity_data(data_dir='Stanford_Dataset/filtered_info_vi', mo
         cycle_per_cycle.append(np.array(cycle_list))
 
     return vi_per_cell, cap_per_cell, cycle_per_cycle
-
-
-if __name__=='__main__':
-    data = Stanford_Degradation_Dataset('Stanford_Dataset/detrended_VI')

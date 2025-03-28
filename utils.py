@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-mpl.use('Agg')
 mpl.rcParams['figure.dpi'] = 400
 plt.rcParams["xtick.direction"] = 'in'
 plt.rcParams["ytick.direction"] = 'in'
