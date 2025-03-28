@@ -4,6 +4,8 @@
 
 ### Overview  
 
+![overview](figures/overview.png)
+
 ### Installation  
 
 This model is implemented on `python 3.10` with `torch 2.2.0+cu118`  
@@ -26,4 +28,8 @@ Download the pre-trained model [here]()
 
 #### Training  
 
+...
+
 ### Results
+
+![result1](figures/result1.png)
